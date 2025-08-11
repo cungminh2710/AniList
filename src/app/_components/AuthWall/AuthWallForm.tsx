@@ -24,7 +24,7 @@ export const AuthWallForm = ({
 	};
 
 	return (
-		<Box maxW='md' mx='auto' mt={8}>
+		<Box maxW='md' mx='auto' mt={8} p={4}>
 			<form onSubmit={handleSubmit}>
 				<VStack>
 					<Input
