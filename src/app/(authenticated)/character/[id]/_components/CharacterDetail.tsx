@@ -42,7 +42,7 @@ export const CharacterDetail = ({ id }: { id: string }) => {
 		<Center>
 			<Stack>
 				<Text>{character.name}</Text>
-				<Image src={character.image} alt={character.name} width={400} height={300} objectFit='cover' />
+				<Image src={character.image} alt={character.name} width={400} height={300} />
 
 				<Text>Status: {character.status}</Text>
 				<Text>Species: {character.species}</Text>

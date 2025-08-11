@@ -1,10 +1,9 @@
 import { Provider } from '@/components/ui/provider';
+import { Container } from '@chakra-ui/react';
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import { Footer } from './_components/Footer';
 import './globals.css';
-import { Container } from '@chakra-ui/react';
-import { LightMode } from '@/components/ui/color-mode';
 
 const geistSans = Geist({
 	variable: '--font-geist-sans',
@@ -30,11 +29,9 @@ export default function RootLayout({
 		<html lang='en' suppressHydrationWarning>
 			<body className={`${geistSans.variable} ${geistMono.variable}`}>
 				<Provider>
-					<LightMode>
-						<Container m={'auto'} asChild>
-							<main>{children}</main>
-						</Container>
-					</LightMode>
+					<Container m={'auto'} asChild>
+						<main>{children}</main>
+					</Container>
 					<Footer />
 				</Provider>
 			</body>

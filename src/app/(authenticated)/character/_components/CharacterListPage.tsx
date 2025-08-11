@@ -62,7 +62,7 @@ export const CharacterListPage = ({ page = 1 }: { page?: number }) => {
 												<Dialog.Title>{character.name}</Dialog.Title>
 											</Dialog.Header>
 											<Dialog.Body>
-												<Image src={character.image} alt={character.name} width={400} height={300} objectFit='cover' />
+												<Image src={character.image} alt={character.name} width={400} height={300}/>
 
 												<Text>Status: {character.status}</Text>
 												<Text>Species: {character.species}</Text>
