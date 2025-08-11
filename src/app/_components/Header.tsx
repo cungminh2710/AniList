@@ -1,3 +1,4 @@
+import { ColorModeButton } from '@/components/ui/color-mode';
 import { Button, Flex, Text } from '@chakra-ui/react';
 import Link from 'next/link';
 
@@ -11,6 +12,7 @@ export const Header = ({ heading }: { heading: string }) => {
 			<Button p={2} asChild>
 				<Link href='/profile'>Profile</Link>
 			</Button>
+			<ColorModeButton/>
 		</Flex>
 	);
 };
